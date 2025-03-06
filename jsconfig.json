@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "allowJs": true,
+    "checkJs": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@client/*": ["./client/src/*"],
+      "@server/*": ["./server/src/*"],
+      "@contracts/*": ["./contracts/src/*"],
+      "@shared/*": ["./shared/*"]
+    },
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve"
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".next",
+    "out",
+    "build",
+    "coverage"
+  ],
+  "include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.mjs",
+    "**/*.cjs"
+  ],
+  "typeAcquisition": {
+    "enable": true,
+    "include": [
+      "node",
+      "jest",
+      "mongodb"
+    ]
+  }
+}
